@@ -1,0 +1,291 @@
+.services-hero {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  padding: 100px 0 80px;
+  text-align: center;
+  color: var(--text-light);
+}
+
+/* Services Grid */
+.services-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.service-card {
+  background: var(--light-bg);
+  padding: 40px 30px;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.service-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card:hover {
+  background: white;
+  border-color: var(--primary-color);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+.service-card h3 {
+  font-size: 1.6rem;
+  color: var(--dark-bg);
+  margin-bottom: 15px;
+}
+
+.service-description {
+  color: #666;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.service-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.service-features svg {
+  width: 20px;
+  height: 20px;
+  color: #4ade80;
+  flex-shrink: 0;
+}
+
+/* Process Section */
+.process-section {
+  padding: 100px 0;
+  background: var(--light-bg);
+}
+
+.process-timeline {
+  max-width: 900px;
+  margin: 50px auto 0;
+  position: relative;
+}
+
+.process-timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  bottom: 40px;
+  width: 3px;
+  background: var(--gradient-1);
+}
+
+.process-step {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.process-step.animate {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.8s ease;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: var(--gradient-1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+  z-index: 1;
+}
+
+.step-content {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  flex: 1;
+}
+
+.step-content h4 {
+  font-size: 1.4rem;
+  color: var(--dark-bg);
+  margin-bottom: 10px;
+}
+
+.step-content p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Technologies Section */
+.technologies-section {
+  padding: 100px 0;
+  background: var(--dark-bg);
+  color: var(--text-light);
+}
+
+.technologies-section .section-title {
+  color: var(--text-light);
+}
+
+.technologies-section .section-title::after {
+  background: var(--gradient-3);
+}
+
+.tech-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.tech-category {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.tech-category.animate {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.6s ease;
+}
+
+.tech-category h4 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tech-tags span {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.tech-tags span:hover {
+  background: var(--gradient-3);
+  transform: translateY(-2px);
+}
+
+/* Services CTA */
+.services-cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.services-cta .cta-content {
+  text-align: center;
+  color: var(--text-light);
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.services-cta .cta-content.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease;
+}
+
+.services-cta h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.services-cta p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 80px 0 60px;
+  }
+
+  .services-section,
+  .process-section,
+  .technologies-section,
+  .services-cta {
+    padding: 60px 0;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .process-timeline::before {
+    left: 20px;
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .process-step {
+    gap: 20px;
+  }
+
+  .tech-categories {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .services-cta h2 {
+    font-size: 2rem;
+  }
+
+  .services-cta p {
+    font-size: 1.1rem;
+  }
+}
