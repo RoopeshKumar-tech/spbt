@@ -4,15 +4,15 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .header.scrolled {
-  background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.99);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .navbar {
@@ -27,12 +27,20 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  transition: transform 0.3s ease;
+  transition: none;
   text-decoration: none;
+  transform: none;
 }
 
 .logo:hover {
-  transform: translateY(-2px);
+  transform: none;
+}
+
+.logo-icon,
+.logo-text,
+.logo-subtext {
+  transition: none;
+  transform: none;
 }
 
 .logo-icon {
@@ -63,10 +71,7 @@
 .logo-text {
   font-size: 22px;
   font-weight: 800;
-  background: var(--gradient-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #BB8B23 !important;
   letter-spacing: 0.5px;
   line-height: 1.2;
   white-space: nowrap;
@@ -74,8 +79,8 @@
 
 .logo-subtext {
   font-size: 10px;
-  color: var(--text-dark);
-  opacity: 0.7;
+  color: #888888;
+  opacity: 0.9;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -90,7 +95,7 @@
   position: relative;
   font-size: 16px;
   font-weight: 600;
-  color: var(--text-dark);
+  color: #333333;
   padding: 8px 0;
   transition: color 0.3s ease;
 }
@@ -102,13 +107,13 @@
   left: 0;
   width: 0;
   height: 3px;
-  background: var(--gradient-1);
+  background: #BB8B23;
   transition: width 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--primary-color);
+  color: #BB8B23;
 }
 
 .nav-link:hover::after,
@@ -130,9 +135,13 @@
 .mobile-menu-toggle span {
   width: 25px;
   height: 3px;
-  background: var(--text-dark);
+  background: #333333;
   transition: all 0.3s ease;
   border-radius: 2px;
+}
+
+.mobile-menu-toggle.active span {
+  background: #BB8B23;
 }
 
 .mobile-menu-toggle.active span:nth-child(1) {
@@ -180,7 +189,7 @@
   .nav-link {
     display: block;
     padding: 20px 30px;
-    color: var(--text-light);
+    color: #FFFFFF;
     font-size: 18px;
   }
 

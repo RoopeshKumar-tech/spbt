@@ -1,14 +1,14 @@
 .services-hero {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #FFF9F0 0%, #FFF5E6 100%);
   padding: 100px 0 80px;
   text-align: center;
-  color: var(--text-light);
+  color: #333333;
 }
 
 /* Services Grid */
 .services-section {
   padding: 100px 0;
-  background: white;
+  background: #FFFFFF;
 }
 
 .services-grid {
@@ -19,11 +19,11 @@
 }
 
 .service-card {
-  background: var(--light-bg);
+  background: #FFFFFF;
   padding: 40px 30px;
   border-radius: 20px;
   transition: all 0.4s ease;
-  border: 2px solid transparent;
+  border: 2px solid #F0E6D2;
   opacity: 0;
   transform: translateY(30px);
 }
@@ -34,10 +34,10 @@
 }
 
 .service-card:hover {
-  background: white;
-  border-color: var(--primary-color);
+  background: #FAFAFA;
+  border-color: #BB8B23;
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(187, 139, 35, 0.15);
 }
 
 .service-icon {
@@ -49,12 +49,12 @@
 
 .service-card h3 {
   font-size: 1.6rem;
-  color: var(--dark-bg);
+  color: #333333;
   margin-bottom: 15px;
 }
 
 .service-description {
-  color: #666;
+  color: #666666;
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 20px;
@@ -71,7 +71,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #555;
+  color: #666666;
   font-size: 0.95rem;
 }
 
@@ -85,7 +85,7 @@
 /* Process Section */
 .process-section {
   padding: 100px 0;
-  background: var(--light-bg);
+  background: #F8F8F8;
 }
 
 .process-timeline {
@@ -157,16 +157,16 @@
 /* Technologies Section */
 .technologies-section {
   padding: 100px 0;
-  background: var(--dark-bg);
-  color: var(--text-light);
+  background: #F8F8F8;
+  color: #333333;
 }
 
 .technologies-section .section-title {
-  color: var(--text-light);
+  color: #000000;
 }
 
 .technologies-section .section-title::after {
-  background: var(--gradient-3);
+  background: var(--gradient-1);
 }
 
 .tech-categories {
@@ -190,7 +190,7 @@
 .tech-category h4 {
   font-size: 1.4rem;
   margin-bottom: 20px;
-  color: var(--accent-color);
+  color: #333333;
 }
 
 .tech-tags {
@@ -201,27 +201,31 @@
 
 .tech-tags span {
   padding: 8px 16px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #FFFFFF;
+  border: 2px solid #F0E6D2;
   border-radius: 25px;
   font-size: 0.9rem;
   transition: all 0.3s ease;
   cursor: default;
+  color: #333333;
 }
 
 .tech-tags span:hover {
-  background: var(--gradient-3);
+  background: #BB8B23;
+  border-color: #BB8B23;
+  color: #FFFFFF;
   transform: translateY(-2px);
 }
 
 /* Services CTA */
 .services-cta {
   padding: 100px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #FFF9F0 0%, #FFF5E6 100%);
 }
 
 .services-cta .cta-content {
   text-align: center;
-  color: var(--text-light);
+  color: #333333;
   opacity: 0;
   transform: translateY(30px);
 }

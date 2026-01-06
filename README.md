@@ -13,7 +13,7 @@ A professional, modern company website built with React, featuring **advanced va
 - **Status:** Active
 - **Business Activity:** Computer Programming, Consultancy and Related Activities (Division 62)
 - **Registered Office:** No 32/2 J R R Complex, MSR/HMT Main Road, Mathikere, Bangalore - 560054, Karnataka, India
-- **Email:** poornabodhaveera@gmail.com
+- **Email:** veerapoornabodha@gmail.com
 - **Phone:** +91 9008224274
 
 ### Designated Partners
@@ -164,7 +164,7 @@ SPBT/
 
 For any inquiries, please reach out to:
 
-- **Email:** poornabodhaveera@gmail.com
+- **Email:** veerapoornabodha@gmail.com
 - **Phone:** +91 9008224274
 - **Address:** No 32/2 J R R Complex, MSR/HMT Main Road, Mathikere, Bangalore - 560054, Karnataka, India
 - **LLPIN:** ACO-3350

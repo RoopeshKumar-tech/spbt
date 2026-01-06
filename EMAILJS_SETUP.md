@@ -1,6 +1,6 @@
 # EmailJS Setup Instructions
 
-The contact form is now integrated with EmailJS to send emails to **poornabodhaveera@gmail.com**.
+The contact form is now integrated with EmailJS to send emails to **veerapoornabodha@gmail.com**.
 
 ## Setup Steps:
 
@@ -14,7 +14,7 @@ The contact form is now integrated with EmailJS to send emails to **poornabodhav
 - Go to **Email Services** in dashboard
 - Click **Add New Service**
 - Choose **Gmail** (or your preferred provider)
-- Connect your Gmail account: **poornabodhaveera@gmail.com**
+- Connect your Gmail account: **veerapoornabodha@gmail.com**
 - Copy the **Service ID**
 
 ### 3. Create Email Template
@@ -68,7 +68,7 @@ const publicKey = "xxxxxxxxxxxxxx"; // Your Public Key from step 4
 
 - Fill out the contact form on your website
 - Submit the form
-- Check **poornabodhaveera@gmail.com** for the email
+- Check **veerapoornabodha@gmail.com** for the email
 
 ## Features Preserved:
 
@@ -82,7 +82,7 @@ const publicKey = "xxxxxxxxxxxxxx"; // Your Public Key from step 4
 
 ## Email Details:
 
-- **Recipient:** poornabodhaveera@gmail.com
+- **Recipient:** veerapoornabodha@gmail.com
 - **Sender:** User's email from form
 - **Content:** All form fields (name, email, phone, subject, message)
 

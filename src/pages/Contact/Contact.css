@@ -1,35 +1,36 @@
 .contact-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #FFF9F0 0%, #FFF5E6 100%);
   padding: 100px 0 80px;
   text-align: center;
-  color: var(--text-light);
+  color: #333333;
 }
 
 /* Contact Section */
 .contact-section {
   padding: 100px 0;
-  background: var(--light-bg);
+  background: #FFFFFF;
 }
 
 .contact-wrapper {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: 60px;
-  background: white;
+  background: #FFFFFF;
   border-radius: 30px;
   padding: 60px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 60px rgba(187, 139, 35, 0.1);
+  border: 2px solid #F0E6D2;
 }
 
 /* Contact Info */
 .contact-info h2 {
   font-size: 2rem;
-  color: var(--dark-bg);
+  color: #333333;
   margin-bottom: 15px;
 }
 
 .contact-intro {
-  color: #666;
+  color: #666666;
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 40px;
@@ -67,12 +68,12 @@
 
 .info-content h4 {
   font-size: 1.2rem;
-  color: var(--dark-bg);
+  color: #333333;
   margin-bottom: 8px;
 }
 
 .info-content p {
-  color: #666;
+  color: #666666;
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -85,18 +86,20 @@
 .social-links a {
   width: 45px;
   height: 45px;
-  background: var(--light-bg);
+  background: #F0E6D2;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  color: #333333;
 }
 
 .social-links a:hover {
-  background: var(--gradient-1);
+  background: #BB8B23;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 5px 15px rgba(187, 139, 35, 0.4);
+  color: #FFFFFF;
 }
 
 .social-links svg {
@@ -124,7 +127,7 @@
 
 .form-group label {
   font-weight: 600;
-  color: var(--dark-bg);
+  color: #333333;
   font-size: 0.95rem;
 }
 
@@ -138,21 +141,22 @@
 .form-group textarea {
   padding: 14px 18px;
   padding-right: 45px;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #E0E0E0;
   border-radius: 12px;
   font-size: 1rem;
   font-family: inherit;
   transition: all 0.3s ease;
-  background: var(--light-bg);
+  background: #F8F8F8;
   width: 100%;
+  color: #333333;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--primary-color);
-  background: white;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #BB8B23;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(187, 139, 35, 0.15);
 }
 
 .form-group input.error,

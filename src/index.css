@@ -5,14 +5,14 @@
 }
 
 :root {
-  --primary-color: #0066cc;
+  --primary-color: #BB8B23;
   --secondary-color: #ff6b35;
   --dark-bg: #1a1a2e;
   --light-bg: #f5f5f5;
   --text-dark: #333333;
   --text-light: #ffffff;
   --accent-color: #00d9ff;
-  --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-1: linear-gradient(135deg, #BB8B23 0%, #D4A574 100%);
   --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -22,8 +22,8 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: var(--text-dark);
-  background-color: var(--light-bg);
+  color: #333333;
+  background-color: #FFFFFF;
   overflow-x: hidden;
 }
 
@@ -169,7 +169,7 @@ img {
   text-align: center;
   margin-bottom: 50px;
   position: relative;
-  color: var(--dark-bg);
+  color: #000000;
 }
 
 .section-title::after {

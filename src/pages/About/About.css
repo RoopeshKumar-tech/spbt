@@ -1,8 +1,8 @@
 .about-hero {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(135deg, #FFF9F0 0%, #FFF5E6 100%);
   padding: 100px 0 80px;
   text-align: center;
-  color: var(--text-light);
+  color: #333333;
 }
 
 .page-title {
@@ -19,7 +19,7 @@
 /* Company Overview */
 .company-overview {
   padding: 100px 0;
-  background: white;
+  background: #FFFFFF;
 }
 
 .overview-content {
@@ -42,7 +42,7 @@
 .overview-text p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #555;
+  color: #555555;
   margin-bottom: 20px;
 }
 
@@ -66,7 +66,7 @@
 /* Mission & Vision */
 .mission-vision {
   padding: 100px 0;
-  background: var(--light-bg);
+  background: #F8F8F8;
 }
 
 .mv-grid {
@@ -76,13 +76,14 @@
 }
 
 .mv-card {
-  background: white;
+  background: #FFFFFF;
   padding: 40px 30px;
   border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 20px rgba(187, 139, 35, 0.1);
   transition: all 0.4s ease;
   opacity: 0;
   transform: translateY(30px);
+  border: 2px solid #F0E6D2;
 }
 
 .mv-card.animate {
@@ -115,19 +116,19 @@
 .mv-card h3 {
   font-size: 1.8rem;
   margin-bottom: 15px;
-  color: var(--dark-bg);
+  color: #333333;
 }
 
 .mv-card p {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: #666;
+  color: #666666;
 }
 
 /* Team Section */
 .team {
   padding: 100px 0;
-  background: white;
+  background: #F8F8F8;
 }
 
 .expertise-grid {
@@ -178,16 +179,16 @@
 /* Why Choose Us */
 .why-choose {
   padding: 100px 0;
-  background: var(--dark-bg);
-  color: var(--text-light);
+  background: #FFFFFF;
+  color: #333333;
 }
 
 .why-choose .section-title {
-  color: var(--text-light);
+  color: #000000;
 }
 
 .why-choose .section-title::after {
-  background: var(--gradient-3);
+  background: var(--gradient-1);
 }
 
 .choose-grid {
@@ -199,13 +200,9 @@
 
 .choose-item {
   padding: 30px;
-  background: rgba(255, 255, 255, 0.05);
+  background: #FFFFFF;
   border-radius: 15px;
-  border-left: 4px solid transparent;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), 
-                    linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
+  border: 2px solid #F0E6D2;
   transition: all 0.3s ease;
   opacity: 0;
   transform: translateX(-30px);
@@ -217,15 +214,17 @@
 }
 
 .choose-item:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: #FAFAFA;
+  border-color: #BB8B23;
   transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(187, 139, 35, 0.15);
 }
 
 .choose-number {
   display: inline-block;
   font-size: 2.5rem;
   font-weight: 800;
-  background: var(--gradient-3);
+  background: var(--gradient-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -235,17 +234,18 @@
 .choose-item h4 {
   font-size: 1.4rem;
   margin-bottom: 10px;
+  color: #333333;
 }
 
 .choose-item p {
-  color: rgba(255, 255, 255, 0.8);
+  color: #666666;
   line-height: 1.7;
 }
 
 /* Company Details Section */
 .company-details {
   padding: 100px 0;
-  background: white;
+  background: #F8F8F8;
 }
 
 .details-grid {
@@ -256,11 +256,11 @@
 }
 
 .detail-card {
-  background: var(--light-bg);
+  background: #FFFFFF;
   padding: 35px 25px;
   border-radius: 20px;
   transition: all 0.4s ease;
-  border: 2px solid transparent;
+  border: 2px solid #F0E6D2;
   opacity: 0;
   transform: translateY(30px);
 }
@@ -271,10 +271,10 @@
 }
 
 .detail-card:hover {
-  background: white;
-  border-color: var(--primary-color);
+  background: #FAFAFA;
+  border-color: #BB8B23;
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(187, 139, 35, 0.15);
 }
 
 .detail-icon {
@@ -285,7 +285,7 @@
 
 .detail-card h4 {
   font-size: 1.4rem;
-  color: var(--dark-bg);
+  color: #333333;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -297,14 +297,14 @@
 }
 
 .detail-info p {
-  color: #555;
+  color: #555555;
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 0;
 }
 
 .detail-info strong {
-  color: var(--dark-bg);
+  color: #333333;
   font-weight: 600;
 }
 
@@ -319,7 +319,7 @@
 
 .partner-detail {
   font-size: 0.85rem !important;
-  color: #888 !important;
+  color: #888888 !important;
   margin-bottom: 15px !important;
   padding-left: 10px;
 }

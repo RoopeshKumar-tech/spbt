@@ -36,7 +36,7 @@
   animation: spin 1s linear infinite;
 }
 
-.logo-text {
+.loading-screen .logo-text {
   font-size: 2rem;
   font-weight: 800;
   color: white;

@@ -2,6 +2,14 @@ import { useState, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
 import './Contact.css'
 
+const EMAIL_TO = 'veerapoornabodha@gmail.com'
+const EMAIL_SERVICE_ID = 'service_40e1bzb'
+// Main notification template (from EmailJS dashboard)
+const EMAIL_TEMPLATE_ID = 'template_4m5gsvs'
+// Auto-reply template (use same unless you have a dedicated auto-reply template ID)
+const EMAIL_AUTOREPLY_TEMPLATE_ID = 'template_4m5gsvs'
+const EMAIL_PUBLIC_KEY = 'zxpUIbQL-psjKYoWa'
+
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -14,6 +22,7 @@ function Contact() {
   const [errors, setErrors] = useState({})
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState(null)
+  const [submitError, setSubmitError] = useState('')
   const [touched, setTouched] = useState({})
   const [verifying, setVerifying] = useState({})
   const [fieldValidation, setFieldValidation] = useState({})
@@ -285,6 +294,7 @@ function Contact() {
 
     setIsSubmitting(true)
     setSubmitStatus(null)
+    setSubmitError('')
 
     // Simulate form submission with verification
     try {
@@ -300,22 +310,40 @@ function Contact() {
       
       // Send actual email using EmailJS
       const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        phone: formData.phone || 'Not provided',
-        subject: formData.subject,
-        message: formData.message,
-        to_email: 'poornabodhaveera@gmail.com'
+        from_name: formData.name.trim(),
+        from_email: formData.email.trim(),
+        reply_to: formData.email.trim(),
+        to_name: 'Poornabodha Technologies',
+        phone: (formData.phone || '').trim() || 'Not provided',
+        subject: formData.subject.trim(),
+        message: formData.message.trim(),
+        to_email: EMAIL_TO
       }
       
       // EmailJS configuration
-      const serviceId = 'service_pi3ly5k'
-      const templateId = 'template_cnw1ush'
-      const publicKey = 'iwB_LS5auYkNRKCtY'
-      
       // Send email via EmailJS
-      await emailjs.send(serviceId, templateId, templateParams, publicKey)
+      await emailjs.send(EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, templateParams, EMAIL_PUBLIC_KEY)
       console.log('Email sent successfully via EmailJS')
+
+      // Auto-reply to the user (non-blocking)
+      const autoReplyParams = {
+        // Matches your auto-reply template placeholders
+        name: formData.name.trim() || 'Valued Customer',
+        title: formData.subject.trim() || 'Your request',
+
+        // Delivery targets
+        to_email: formData.email.trim(),
+
+        // Optional context
+        from_name: 'Poornabodha Technologies',
+        reply_to: EMAIL_TO
+      }
+
+      if (autoReplyParams.to_email) {
+        emailjs
+          .send(EMAIL_SERVICE_ID, EMAIL_AUTOREPLY_TEMPLATE_ID, autoReplyParams, EMAIL_PUBLIC_KEY)
+          .catch(err => console.error('Auto-reply failed:', err?.text || err))
+      }
       
       // Success
       setSubmitStatus('success')
@@ -336,7 +364,9 @@ function Contact() {
         setSubmitStatus(null)
       }, 7000)
     } catch (error) {
-      console.error('Email sending failed:', error)
+      console.error('Email sending failed:', error?.text || error)
+      const errorMsg = (error && (error.text || error.message)) || 'Email service temporarily unavailable.'
+      setSubmitError(errorMsg)
       setSubmitStatus('error')
       setTimeout(() => setSubmitStatus(null), 5000)
     } finally {
@@ -403,7 +433,7 @@ function Contact() {
                   </div>
                   <div className="info-content">
                     <h4>Email</h4>
-                    <p>poornabodhaveera@gmail.com</p>
+                    <p>veerapoornabodha@gmail.com</p>
                     <p>Official Contact</p>
                   </div>
                 </div>
@@ -653,7 +683,10 @@ function Contact() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <div>
-                      <strong>Error!</strong> Something went wrong. Please try again or contact us directly.
+                      <strong>Error!</strong> {submitError || 'Something went wrong. Please try again or contact us directly.'}
+                      <div style={{ marginTop: '6px', fontSize: '0.9rem' }}>
+                        If the problem persists, click the mail link above or use the fallback email that just opened.
+                      </div>
                     </div>
                   </div>
                 )}
