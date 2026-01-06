@@ -175,7 +175,7 @@ function About() {
             <div className="choose-item animate-on-scroll">
               <span className="choose-number">01</span>
               <h4>Proven Track Record</h4>
-              <p>Over 500+ successful projects delivered across various industries</p>
+              <p>Over 10+ successful projects delivered across various industries</p>
             </div>
             <div className="choose-item animate-on-scroll">
               <span className="choose-number">02</span>
