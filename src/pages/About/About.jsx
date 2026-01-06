@@ -59,7 +59,7 @@ function About() {
                 exceeding expectations.
               </p>
             </div>
-            <div className="overview-image animate-on-scroll">
+            <div className="overview-image animate-on-scroll" style={{display: 'none'}}>
               <div className="image-placeholder">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <defs>

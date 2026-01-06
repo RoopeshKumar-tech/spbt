@@ -9,8 +9,11 @@ function Footer() {
       <div className="footer-content container">
         <div className="footer-section footer-brand">
           <div className="footer-logo-container">
-            <img src="/WhatsApp Image 2026-01-01 at 5.13.15 PM.jpeg" alt="Poornabodha Technologies" className="footer-logo-img" onError={(e) => e.target.style.display = 'none'} />
-            <h3 className="footer-logo">Poornabodha Technologies</h3>
+            <img src="/logo.png" alt="Poornabodha Technologies" className="footer-logo-img" onError={(e) => e.target.style.display = 'none'} />
+            <div className="footer-logo">
+              <span>Poornabodha Technologies</span>
+              <span className="footer-logo-subtext">Limited Liability Partnership</span>
+            </div>
           </div>
           <p className="footer-description">
             Computer Programming, Consultancy and Related Activities. Empowering businesses with innovative IT solutions.

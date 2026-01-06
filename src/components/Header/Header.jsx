@@ -30,7 +30,7 @@ function Header() {
         <nav className="navbar">
           <Link to="/" className="logo">
             <div className="logo-icon">
-              <img src="/WhatsApp Image 2026-01-01 at 5.13.15 PM.jpeg" alt="Poornabodha Technologies" onError={(e) => e.target.style.display = 'none'} />
+              <img src="/logo.png" alt="Poornabodha Technologies" onError={(e) => e.target.style.display = 'none'} />
             </div>
             <div className="logo-content">
               <span className="logo-text">Poornabodha Technologies</span>
