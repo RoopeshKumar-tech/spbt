@@ -134,6 +134,11 @@ function About() {
           <h2 className="section-title animate-on-scroll">Our Expertise</h2>
           <div className="expertise-grid">
             <div className="expertise-item animate-on-scroll">
+              <div className="expertise-icon">🤖</div>
+              <h4>AI & ML</h4>
+              <p>Artificial intelligence and machine learning solutions</p>
+            </div>
+            <div className="expertise-item animate-on-scroll">
               <div className="expertise-icon">💻</div>
               <h4>Software Development</h4>
               <p>Custom software solutions tailored to your business needs</p>
@@ -143,11 +148,7 @@ function About() {
               <h4>Cloud Solutions</h4>
               <p>Scalable cloud infrastructure and migration services</p>
             </div>
-            <div className="expertise-item animate-on-scroll">
-              <div className="expertise-icon">📱</div>
-              <h4>Mobile Development</h4>
-              <p>Native and cross-platform mobile applications</p>
-            </div>
+            
             <div className="expertise-item animate-on-scroll">
               <div className="expertise-icon">🔒</div>
               <h4>Cybersecurity</h4>
@@ -158,11 +159,7 @@ function About() {
               <h4>Data Analytics</h4>
               <p>Business intelligence and data-driven insights</p>
             </div>
-            <div className="expertise-item animate-on-scroll">
-              <div className="expertise-icon">🤖</div>
-              <h4>AI & ML</h4>
-              <p>Artificial intelligence and machine learning solutions</p>
-            </div>
+            
           </div>
         </div>
       </section>

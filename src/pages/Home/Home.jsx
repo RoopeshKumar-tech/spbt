@@ -87,7 +87,7 @@ function Home() {
             </p>
             <p className="hero-description">
               We deliver cutting-edge IT solutions that transform businesses and drive digital success. 
-              Registered under RoC-Bangalore (LLPIN: ACO-3350), your trusted partner in technology innovation.
+             your trusted partner in technology innovation.
             </p>
             <div className="hero-buttons">
               <Link to="/services" className="btn btn-primary">

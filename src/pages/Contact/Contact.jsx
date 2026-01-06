@@ -5,9 +5,9 @@ import './Contact.css'
 const EMAIL_TO = 'veerapoornabodha@gmail.com'
 const EMAIL_SERVICE_ID = 'service_40e1bzb'
 // Main notification template (from EmailJS dashboard)
-const EMAIL_TEMPLATE_ID = 'template_4m5gsvs'
+const EMAIL_TEMPLATE_ID = 'template_ysam9p8'
 // Auto-reply template (use same unless you have a dedicated auto-reply template ID)
-const EMAIL_AUTOREPLY_TEMPLATE_ID = 'template_4m5gsvs'
+const EMAIL_AUTOREPLY_TEMPLATE_ID = 'template_ysam9p8'
 const EMAIL_PUBLIC_KEY = 'zxpUIbQL-psjKYoWa'
 
 function Contact() {
@@ -449,19 +449,6 @@ function Contact() {
                     <h4>Registered Office</h4>
                     <p>No 32/2 J R R Complex, MSR/HMT Main Road</p>
                     <p>Mathikere, Bangalore - 560054, Karnataka, India</p>
-                  </div>
-                </div>
-
-                <div className="info-item">
-                  <div className="info-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <div className="info-content">
-                    <h4>Working Hours</h4>
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p>Saturday: 10:00 AM - 4:00 PM</p>
                   </div>
                 </div>
               </div>

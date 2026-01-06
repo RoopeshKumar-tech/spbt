@@ -25,16 +25,10 @@ function Services() {
 
   const services = [
     {
-      icon: '🌐',
-      title: 'Web Development',
-      description: 'Custom websites and web applications built with modern frameworks and best practices.',
-      features: ['Responsive Design', 'SEO Optimized', 'Fast Performance', 'Secure & Scalable']
-    },
-    {
-      icon: '📱',
-      title: 'Mobile App Development',
-      description: 'Native and cross-platform mobile applications for iOS and Android.',
-      features: ['Native & Hybrid Apps', 'User-Centric Design', 'App Store Optimization', 'Maintenance & Support']
+      icon: '🤖',
+      title: 'AI & Machine Learning',
+      description: 'Intelligent solutions powered by artificial intelligence and machine learning.',
+      features: ['Predictive Analytics', 'Natural Language Processing', 'Computer Vision', 'Chatbots']
     },
     {
       icon: '☁️',
@@ -42,6 +36,14 @@ function Services() {
       description: 'Cloud migration, infrastructure setup, and management services.',
       features: ['AWS/Azure/GCP', 'Cloud Migration', 'DevOps Services', 'Cost Optimization']
     },
+    {
+      icon: '🌐',
+      title: 'Web Development',
+      description: 'Custom websites and web applications built with modern frameworks and best practices.',
+      features: ['Responsive Design', 'SEO Optimized', 'Fast Performance', 'Secure & Scalable']
+    },
+    
+    
     {
       icon: '🎨',
       title: 'UI/UX Design',
@@ -54,12 +56,7 @@ function Services() {
       description: 'Comprehensive security solutions to protect your digital assets.',
       features: ['Security Audits', 'Penetration Testing', 'Compliance', 'Incident Response']
     },
-    {
-      icon: '🤖',
-      title: 'AI & Machine Learning',
-      description: 'Intelligent solutions powered by artificial intelligence and machine learning.',
-      features: ['Predictive Analytics', 'Natural Language Processing', 'Computer Vision', 'Chatbots']
-    },
+    
     {
       icon: '📊',
       title: 'Data Analytics',
@@ -162,53 +159,6 @@ function Services() {
         </div>
       </section>
 
-      {/* Technologies Section */}
-      <section className="technologies-section">
-        <div className="container">
-          <h2 className="section-title animate-on-scroll">Technologies We Use</h2>
-          <div className="tech-categories">
-            <div className="tech-category animate-on-scroll">
-              <h4>Frontend</h4>
-              <div className="tech-tags">
-                <span>React</span>
-                <span>Angular</span>
-                <span>Vue.js</span>
-                <span>Next.js</span>
-                <span>TypeScript</span>
-              </div>
-            </div>
-            <div className="tech-category animate-on-scroll">
-              <h4>Backend</h4>
-              <div className="tech-tags">
-                <span>Node.js</span>
-                <span>Python</span>
-                <span>Java</span>
-                <span>.NET</span>
-                <span>PHP</span>
-              </div>
-            </div>
-            <div className="tech-category animate-on-scroll">
-              <h4>Mobile</h4>
-              <div className="tech-tags">
-                <span>React Native</span>
-                <span>Flutter</span>
-                <span>Swift</span>
-                <span>Kotlin</span>
-              </div>
-            </div>
-            <div className="tech-category animate-on-scroll">
-              <h4>Cloud & DevOps</h4>
-              <div className="tech-tags">
-                <span>AWS</span>
-                <span>Azure</span>
-                <span>Google Cloud</span>
-                <span>Docker</span>
-                <span>Kubernetes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="services-cta">
