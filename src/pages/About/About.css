@@ -366,6 +366,68 @@
     padding: 60px 0;
   }
 
+  .overview-content,
+  .mv-grid,
+  .expertise-grid,
+  .choose-grid,
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .overview-text h2,
+  .mv-card h3,
+  .expertise-item h4 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 60px 0 40px;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .company-overview,
+  .mission-vision,
+  .team,
+  .why-choose,
+  .company-details {
+    padding: 50px 0;
+  }
+
+  .overview-text h2,
+  .mv-card h3,
+  .expertise-item h4,
+  .choose-item h4 {
+    font-size: 1.2rem;
+  }
+
+  .mv-card,
+  .expertise-item,
+  .choose-item,
+  .detail-card {
+    padding: 20px;
+  }
+
+  .overview-text p,
+  .mv-card p,
+  .detail-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+    padding: 60px 0;
+  }
+
   .mv-grid,
   .expertise-grid,
   .choose-grid {

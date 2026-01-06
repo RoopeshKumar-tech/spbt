@@ -293,3 +293,49 @@
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .services-hero {
+    padding: 60px 0 40px;
+  }
+
+  .services-section,
+  .process-section,
+  .technologies-section,
+  .services-cta {
+    padding: 50px 0;
+  }
+
+  .service-card,
+  .tech-category {
+    padding: 20px;
+  }
+
+  .service-card h3,
+  .tech-category h4 {
+    font-size: 1.2rem;
+  }
+
+  .service-description,
+  .tech-tags span {
+    font-size: 0.95rem;
+  }
+
+  .process-step {
+    gap: 15px;
+  }
+
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .services-cta h2 {
+    font-size: 1.6rem;
+  }
+
+  .services-cta p {
+    font-size: 0.95rem;
+  }
+}

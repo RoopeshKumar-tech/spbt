@@ -430,4 +430,126 @@
   .map-overlay h3 {
     font-size: 1.5rem;
   }
+
+  .contact-form {
+    gap: 20px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    min-height: 44px;
+    padding: 12px 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero {
+    padding: 60px 0 40px;
+  }
+
+  .contact-section {
+    padding: 50px 0;
+  }
+
+  .contact-wrapper {
+    padding: 25px 15px;
+    gap: 30px;
+  }
+
+  .contact-info h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .contact-intro {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+
+  .info-items {
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .info-item {
+    gap: 15px;
+  }
+
+  .info-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .info-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .info-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .info-content p {
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    gap: 12px;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-links svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .contact-form {
+    gap: 15px;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px 12px;
+    font-size: 1rem;
+    min-height: 44px;
+  }
+
+  .form-group textarea {
+    min-height: 120px;
+  }
+
+  .submit-btn {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+
+  .clear-btn {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+
+  .map-placeholder {
+    height: 250px;
+  }
+
+  .map-overlay {
+    padding: 20px 30px;
+  }
+
+  .map-overlay h3 {
+    font-size: 1.3rem;
+  }
+
+  .map-overlay p {
+    font-size: 0.9rem;
+  }
 }

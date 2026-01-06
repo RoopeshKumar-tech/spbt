@@ -205,10 +205,46 @@ img {
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;
+    margin-bottom: 40px;
   }
   
   .btn {
     padding: 10px 24px;
     font-size: 14px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  .section-title::after {
+    width: 60px;
+    height: 3px;
+    bottom: -12px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 13px;
+    border-radius: 40px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    padding: 0 12px;
   }
 }
