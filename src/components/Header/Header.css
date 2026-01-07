@@ -15,11 +15,18 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
+.header .container {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 15px 16px 15px 0;
   position: relative;
 }
 
@@ -30,6 +37,7 @@
   transition: none;
   text-decoration: none;
   transform: none;
+  margin-right: auto;
 }
 
 .logo:hover {

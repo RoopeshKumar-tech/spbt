@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import HeroSlider from '../../components/HeroSlider/HeroSlider'
 import './Home.css'
 
 function Home() {
@@ -70,36 +71,8 @@ function Home() {
 
   return (
     <div className="home">
-      {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-background">
-          <div className="hero-shape shape-1"></div>
-          <div className="hero-shape shape-2"></div>
-          <div className="hero-shape shape-3"></div>
-        </div>
-        <div className="container">
-          <div className="hero-content fade-in">
-            <h1 className="hero-title">
-              Welcome to <span className="gradient-text">Poornabodha Technologies</span>
-            </h1>
-            <p className="hero-subtitle">
-              Computer Programming, Consultancy and Related Activities
-            </p>
-            <p className="hero-description">
-              We deliver cutting-edge IT solutions that transform businesses and drive digital success. 
-             your trusted partner in technology innovation.
-            </p>
-            <div className="hero-buttons">
-              <Link to="/services" className="btn btn-primary">
-                Explore Services
-              </Link>
-              <Link to="/contact" className="btn btn-secondary">
-                Get In Touch
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Slider Section */}
+      <HeroSlider />
 
       {/* Features Section */}
       <section className="features">

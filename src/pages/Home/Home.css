@@ -151,21 +151,25 @@
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
 }
 
 .feature-card {
   background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
   padding: 40px 30px;
-  border-radius: 20px;
   text-align: center;
-  transition: all 0.4s ease;
-  box-shadow: 0 5px 20px rgba(187, 139, 35, 0.1);
-  opacity: 0;
-  transform: translateY(30px);
-  border: 2px solid #F0E6D2;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  border-color: #BB8B23;
 }
 
 .feature-card.animate {
@@ -266,25 +270,21 @@
 .cta-content {
   text-align: center;
   color: #333333;
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.cta-content.animate {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.8s ease;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .cta-content h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #333333;
 }
 
 .cta-content p {
   font-size: 1.3rem;
   margin-bottom: 30px;
+  color: #555555;
   opacity: 0.95;
 }
 
