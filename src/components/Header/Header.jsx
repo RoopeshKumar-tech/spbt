@@ -34,7 +34,6 @@ function Header() {
             </div>
             <div className="logo-content">
               <span className="logo-text">Poornabodha Technologies</span>
-              <span className="logo-subtext">Limited Liability Partnership</span>
             </div>
           </Link>
 
@@ -50,35 +49,43 @@ function Header() {
 
           <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
             <li className="nav-item">
-              <Link 
-                to="/" 
-                className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
+              <Link
+                to="/services"
+                className={`nav-link nav-btn ${location.pathname === '/services' ? 'active' : ''}`}
               >
-                Home
+                Agentic AI Solutions
               </Link>
             </li>
             <li className="nav-item">
-              <Link 
-                to="/about" 
-                className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}
+              <Link
+                to="/innovations"
+                className={`nav-link nav-btn ${location.pathname === '/innovations' ? 'active' : ''}`}
               >
-                About
+                Innovations
               </Link>
             </li>
             <li className="nav-item">
-              <Link 
-                to="/services" 
-                className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`}
+              <Link
+                to="/careers"
+                className={`nav-link nav-btn ${location.pathname === '/careers' ? 'active' : ''}`}
               >
-                Services
+                Career
               </Link>
             </li>
             <li className="nav-item">
-              <Link 
-                to="/contact" 
-                className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
+              <Link
+                to="/about"
+                className={`nav-link nav-btn ${location.pathname === '/about' ? 'active' : ''}`}
               >
-                Contact
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/contact"
+                className={`nav-link nav-btn ${location.pathname === '/contact' ? 'active' : ''}`}
+              >
+                Contact Us
               </Link>
             </li>
           </ul>

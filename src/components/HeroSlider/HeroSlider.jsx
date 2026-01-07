@@ -10,18 +10,18 @@ function HeroSlider() {
       id: 1,
       title: 'Welcome to',
       highlight: 'Poornabodha Technologies',
-      subtitle: 'Computer Programming, Consultancy and Related Activities',
-      description: 'We deliver cutting-edge IT solutions that transform businesses and drive digital success. Your trusted partner in technology innovation.',
-       primaryBtn: { text: 'See Our Work', link: '/services' },
+      subtitle: 'Enterprise IT, product engineering',
+      description: 'Secure delivery. Clear outcomes.',
+      primaryBtn: { text: 'See Our Work', link: '/services' },
       secondaryBtn: { text: 'Schedule Consultation', link: '/contact' },
-      bgImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80' // Tech/data visualization
+      bgImage: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920&q=80' // Modern tech workspace with light/dark contrast
     },
     {
       id: 2,
-      title: 'AI & Machine Learning',
-      highlight: 'Powering Smarter Decisions',
-      subtitle: 'Transform data into actionable intelligence',
-      description: 'Unlock the full potential of your data with custom AI solutions. From predictive analytics to automation, we build systems that give you a competitive edge.',
+      title: 'Agentic AI',
+      highlight: 'Smarter Decisions',
+      subtitle: 'Automation with guardrails',
+      description: 'Operational AI. Human oversight.',
       primaryBtn: { text: 'Explore AI Solutions', link: '/services' },
       secondaryBtn: { text: 'Get Started', link: '/contact' },
       bgImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1920&q=80' // AI/ML concept
@@ -30,8 +30,8 @@ function HeroSlider() {
       id: 3,
       title: 'Cloud Infrastructure',
       highlight: 'Built for Performance',
-      subtitle: 'Secure, scalable, and cost-effective',
-      description: 'Modernize your infrastructure with cloud solutions designed for reliability. Reduce costs by up to 40% while improving speed and security.',
+      subtitle: 'Secure, scalable, cost-lean',
+      description: 'Reliability first. Spend optimized.',
       primaryBtn: { text: 'Cloud Services', link: '/services' },
       secondaryBtn: { text: 'Speak with Expert', link: '/contact' },
       bgImage: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?w=1920&q=80' // Cloud/server technology
@@ -40,8 +40,8 @@ function HeroSlider() {
       id: 4,
       title: 'Strategic IT Consulting',
       highlight: 'For Sustainable Growth',
-      subtitle: 'Expert guidance at every stage',
-      description: 'Navigate digital transformation with confidence. Our consultants bring decades of combined experience helping businesses choose the right technology stack.',
+      subtitle: 'Roadmaps, governance, delivery',
+      description: 'Decisions backed by experts.',
       primaryBtn: { text: 'Book Consultation', link: '/contact' },
       secondaryBtn: { text: 'View Case Studies', link: '/services' },
       bgImage: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80' // Business/consulting
@@ -49,14 +49,10 @@ function HeroSlider() {
   ]
 
   useEffect(() => {
-    // Auto-slide disabled - manual navigation only
-    // Uncomment below to enable auto-slide
-    /*
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length)
-    }, 5000)
+    }, 6000)
     return () => clearInterval(interval)
-    */
   }, [slides.length])
 
   const goToSlide = (index) => {

@@ -5,9 +5,9 @@ import './Contact.css'
 const EMAIL_TO = 'veerapoornabodha@gmail.com'
 const EMAIL_SERVICE_ID = 'service_40e1bzb'
 // Main notification template (from EmailJS dashboard)
-const EMAIL_TEMPLATE_ID = 'template_ysam9p8'
+const EMAIL_TEMPLATE_ID = 'template_4m5gsvs'
 // Auto-reply template (use same unless you have a dedicated auto-reply template ID)
-const EMAIL_AUTOREPLY_TEMPLATE_ID = 'template_ysam9p8'
+const EMAIL_AUTOREPLY_TEMPLATE_ID = 'template_4m5gsvs'
 const EMAIL_PUBLIC_KEY = 'zxpUIbQL-psjKYoWa'
 
 function Contact() {
@@ -15,7 +15,6 @@ function Contact() {
     name: '',
     email: '',
     phone: '',
-    subject: '',
     message: ''
   })
 
@@ -147,25 +146,6 @@ function Contact() {
     return null
   }
 
-  // Advanced subject validation
-  const validateSubject = (subject) => {
-    const trimmedSubject = subject.trim()
-    
-    if (!trimmedSubject) {
-      return 'Subject is required'
-    }
-    
-    if (trimmedSubject.length < 3) {
-      return 'Subject must be at least 3 characters'
-    }
-    
-    if (trimmedSubject.length > 100) {
-      return 'Subject must not exceed 100 characters'
-    }
-    
-    return null
-  }
-
   // Advanced message validation
   const validateMessage = (message) => {
     const trimmedMessage = message.trim()
@@ -203,9 +183,6 @@ function Contact() {
     const phoneError = validatePhone(formData.phone)
     if (phoneError) newErrors.phone = phoneError
 
-    const subjectError = validateSubject(formData.subject)
-    if (subjectError) newErrors.subject = subjectError
-
     const messageError = validateMessage(formData.message)
     if (messageError) newErrors.message = messageError
 
@@ -233,9 +210,6 @@ function Contact() {
         break
       case 'phone':
         error = validatePhone(formData.phone)
-        break
-      case 'subject':
-        error = validateSubject(formData.subject)
         break
       case 'message':
         error = validateMessage(formData.message)
@@ -282,7 +256,6 @@ function Contact() {
       name: true,
       email: true,
       phone: true,
-      subject: true,
       message: true
     })
     
@@ -315,7 +288,6 @@ function Contact() {
         reply_to: formData.email.trim(),
         to_name: 'Poornabodha Technologies',
         phone: (formData.phone || '').trim() || 'Not provided',
-        subject: formData.subject.trim(),
         message: formData.message.trim(),
         to_email: EMAIL_TO
       }
@@ -329,7 +301,7 @@ function Contact() {
       const autoReplyParams = {
         // Matches your auto-reply template placeholders
         name: formData.name.trim() || 'Valued Customer',
-        title: formData.subject.trim() || 'Your request',
+        title: 'Your inquiry',
 
         // Delivery targets
         to_email: formData.email.trim(),
@@ -353,7 +325,6 @@ function Contact() {
         name: '',
         email: '',
         phone: '',
-        subject: '',
         message: ''
       })
       localStorage.removeItem('contactFormDraft')
@@ -379,7 +350,6 @@ function Contact() {
       name: '',
       email: '',
       phone: '',
-      subject: '',
       message: ''
     })
     setErrors({})
@@ -507,7 +477,7 @@ function Contact() {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="email">Email Address *</label>
+                  <label htmlFor="email">Business Email *</label>
                   <div className="input-wrapper">
                     <input
                       type="email"
@@ -561,33 +531,7 @@ function Contact() {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="subject">Subject *</label>
-                  <div className="input-wrapper">
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      onBlur={() => handleBlur('subject')}
-                      className={`${errors.subject ? 'error' : ''} ${fieldValidation.subject === true ? 'valid' : ''}`}
-                      placeholder="How can we help you?"
-                    />
-                    {fieldValidation.subject === true && (
-                      <span className="validation-icon valid">✓</span>
-                    )}
-                    {fieldValidation.subject === false && (
-                      <span className="validation-icon invalid">✗</span>
-                    )}
-                  </div>
-                  {errors.subject && <span className="error-message">{errors.subject}</span>}
-                  {!errors.subject && touched.subject && formData.subject && (
-                    <span className="char-count">{formData.subject.trim().length}/100</span>
-                  )}
-                </div>
-
-                <div className="form-group">
-                  <label htmlFor="message">Message *</label>
+                  <label htmlFor="message">Additional Information *</label>
                   <div className="input-wrapper">
                     <textarea
                       id="message"
@@ -686,11 +630,18 @@ function Contact() {
       {/* Map Section */}
       <section className="map-section">
         <div className="map-placeholder">
-          <div className="map-overlay">
+          <a 
+            href="https://www.google.com/maps/place/13%C2%B001'47.5%22N+77%C2%B033'39.2%22E/@13.0298595,77.5608749,17z/data=!3m1!4b1!4m4!3m3!8m2!3d13.0298595!4d77.5608749?hl=en&entry=ttu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="map-overlay"
+          >
             <h3>Visit Our Office</h3>
             <p>No 32/2 J R R Complex, MSR/HMT Main Road</p>
             <p>Mathikere, Bangalore - 560054, Karnataka, India</p>
-          </div>
+            <p style={{ marginTop: '10px', fontSize: '0.85rem', color: '#666' }}>📍 13°01'47.5"N, 77°33'39.2"E</p>
+            <p style={{ marginTop: '15px', fontSize: '0.9rem', color: '#BB8B23', fontWeight: '600' }}>Click to view on Google Maps →</p>
+          </a>
         </div>
       </section>
     </div>

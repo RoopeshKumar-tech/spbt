@@ -187,26 +187,24 @@
 }
 
 .icon-wrapper {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;
-  background: var(--gradient-1);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 25px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover .icon-wrapper {
-  transform: scale(1.1) rotate(5deg);
-  animation: pulse 1s ease-in-out;
+  transform: scale(1.08);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
 }
 
-.icon-wrapper svg {
-  width: 40px;
-  height: 40px;
-  color: white;
+.icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .feature-card h3 {

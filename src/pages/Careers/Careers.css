@@ -1,0 +1,9 @@
+.careers-hero{background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&q=80') center/cover no-repeat;background-attachment:fixed;min-height:400px;padding:120px 0;text-align:center;color:#fff;display:flex;align-items:center;justify-content:center}
+.careers-section{padding:90px 0;background:#fff}
+.careers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.careers-card{background:#fff;border:1px solid #E2E8F0;border-radius:16px;padding:24px;opacity:0;transform:translateY(16px);transition:all .4s ease}
+.careers-card.animate{opacity:1;transform:translateY(0)}
+.roles,.bullets{padding-left:18px;color:#555}
+.note{color:#666;margin-top:8px}
+.careers-cta{padding:90px 0;background:linear-gradient(135deg,#fff9f0 0%,#fff5e6 100%)}
+.cta-box{background:#fff;border:1px solid #F0E6D2;border-radius:18px;padding:28px;text-align:center;box-shadow:0 10px 30px rgba(187,139,35,.15)}

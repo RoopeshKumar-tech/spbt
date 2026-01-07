@@ -12,7 +12,6 @@ function Footer() {
             <img src="/logo.png" alt="Poornabodha Technologies" className="footer-logo-img" onError={(e) => e.target.style.display = 'none'} />
             <div className="footer-logo">
               <span>Poornabodha Technologies</span>
-              <span className="footer-logo-subtext">Limited Liability Partnership</span>
             </div>
           </div>
           <p className="footer-description">
@@ -40,9 +39,10 @@ function Footer() {
         <div className="footer-section">
           <h4 className="footer-title">Quick Links</h4>
           <ul className="footer-links">
-            <li><Link to="/">Home</Link></li>
+            <li><Link to="/services">Agentic AI Solutions</Link></li>
+            <li><Link to="/innovations">Innovations</Link></li>
+            <li><Link to="/careers">Careers</Link></li>
             <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/services">Services</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
@@ -50,9 +50,9 @@ function Footer() {
         <div className="footer-section">
           <h4 className="footer-title">Services</h4>
           <ul className="footer-links">
-            <li><a href="#web-development">Web Development</a></li>
-            <li><a href="#mobile-apps">Mobile Apps</a></li>
-            <li><a href="#cloud-solutions">Cloud Solutions</a></li>
+            <li><a href="#agentic-ai">Agentic AI & Automation</a></li>
+            <li><a href="#cloud-solutions">Cloud & Platform</a></li>
+            <li><a href="#devops">DevOps & SRE</a></li>
             <li><a href="#consulting">IT Consulting</a></li>
           </ul>
         </div>

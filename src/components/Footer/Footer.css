@@ -13,10 +13,12 @@
   padding-bottom: 40px;
   border-bottom: 1px solid #E0E0E0;
   align-items: start;
+  text-align: left;
 }
 
 .footer-brand {
   padding-right: 20px;
+  text-align: left;
 }
 
 .footer-logo-container {
@@ -24,6 +26,7 @@
   align-items: center;
   gap: 1px;
   margin-bottom: 20px;
+  justify-content: flex-start;
 }
 
 .footer-logo-img {
@@ -229,20 +232,21 @@
   }
 
   .footer-section {
-    text-align: center;
+    text-align: left;
   }
 
   .footer-brand {
     padding-right: 0;
+    text-align: left;
   }
 
   .footer-logo-container {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .footer-title::after {
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    transform: none;
   }
 
   .footer-links a:hover {
