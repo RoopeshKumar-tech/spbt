@@ -74,73 +74,69 @@ function Home() {
       {/* Hero Slider Section */}
       <HeroSlider />
 
-      {/* Features Section */}
-      <section className="features">
+      {/* Why Choose Us Section */}
+      <section className="why-choose-home">
         <div className="container">
           <h2 className="section-title animate-on-scroll">Why Choose Us?</h2>
-          <div className="features-grid">
-            <div className="feature-card animate-on-scroll">
-              <div className="feature-icon">
-                <div className="icon-wrapper">
-                  <img src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?w=400&q=80" alt="Fast & Reliable" />
-                </div>
+          <div className="why-choose-grid">
+            <div className="why-choose-card animate-on-scroll">
+              <div className="card-image-content">
+                <img src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?w=600&q=80" alt="Fast & Reliable" />
               </div>
-              <h3>Fast & Reliable</h3>
-              <p>Lightning-fast solutions with 99.9% uptime guarantee for your business continuity.</p>
+              <div className="card-content-box">
+                <h3>Fast & Reliable</h3>
+                <p>Lightning-fast solutions with 99.9% uptime guarantee for your business continuity.</p>
+              </div>
             </div>
 
-            <div className="feature-card animate-on-scroll">
-              <div className="feature-icon">
-                <div className="icon-wrapper">
-                  <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=400&q=80" alt="Secure Solutions" />
-                </div>
+            <div className="why-choose-card animate-on-scroll">
+              <div className="card-image-content">
+                <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=600&q=80" alt="Secure Solutions" />
               </div>
-              <h3>Secure Solutions</h3>
-              <p>Enterprise-grade security measures to protect your data and maintain compliance.</p>
+              <div className="card-content-box">
+                <h3>Secure Solutions</h3>
+                <p>Enterprise-grade security measures to protect your data and maintain compliance.</p>
+              </div>
             </div>
 
-            <div className="feature-card animate-on-scroll">
-              <div className="feature-icon">
-                <div className="icon-wrapper">
-                  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&q=80" alt="Quality Assured" />
-                </div>
+            <div className="why-choose-card animate-on-scroll">
+              <div className="card-image-content">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80" alt="Quality Assured" />
               </div>
-              <h3>Quality Assured</h3>
-              <p>Rigorous testing and quality control processes ensure flawless deliverables.</p>
+              <div className="card-content-box">
+                <h3>Quality Assured</h3>
+                <p>Rigorous testing and quality control processes ensure flawless deliverables.</p>
+              </div>
             </div>
 
-            <div className="feature-card animate-on-scroll">
-              <div className="feature-icon">
-                <div className="icon-wrapper">
-                  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&q=80" alt="Expert Team" />
-                </div>
+            <div className="why-choose-card animate-on-scroll">
+              <div className="card-image-content">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80" alt="Expert Team" />
               </div>
-              <h3>Expert Team</h3>
-              <p>Highly skilled professionals with years of experience in cutting-edge technologies.</p>
+              <div className="card-content-box">
+                <h3>Expert Team</h3>
+                <p>Highly skilled professionals with years of experience in cutting-edge technologies.</p>
+              </div>
             </div>
 
-            <div className="feature-card animate-on-scroll">
-              <div className="feature-icon">
-                <div className="icon-wrapper">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                  </svg>
-                </div>
+            <div className="why-choose-card animate-on-scroll">
+              <div className="card-image-content">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80" alt="Cloud Ready" />
               </div>
-              <h3>Cloud Ready</h3>
-              <p>Scalable cloud infrastructure for seamless growth and flexibility.</p>
+              <div className="card-content-box">
+                <h3>Cloud Ready</h3>
+                <p>Scalable cloud infrastructure for seamless growth and flexibility.</p>
+              </div>
             </div>
 
-            <div className="feature-card animate-on-scroll">
-              <div className="feature-icon">
-                <div className="icon-wrapper">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                  </svg>
-                </div>
+            <div className="why-choose-card animate-on-scroll">
+              <div className="card-image-content">
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&q=80" alt="24/7 Support" />
               </div>
-              <h3>24/7 Support</h3>
-              <p>Round-the-clock customer support to ensure your operations never stop.</p>
+              <div className="card-content-box">
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock customer support to ensure your operations never stop.</p>
+              </div>
             </div>
           </div>
         </div>

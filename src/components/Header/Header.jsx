@@ -51,7 +51,7 @@ function Header() {
             <li className="nav-item">
               <Link
                 to="/services"
-                className={`nav-link nav-btn ${location.pathname === '/services' ? 'active' : ''}`}
+                className={`nav-link-normal ${location.pathname === '/services' ? 'active' : ''}`}
               >
                 Agentic AI Solutions
               </Link>
@@ -59,7 +59,7 @@ function Header() {
             <li className="nav-item">
               <Link
                 to="/innovations"
-                className={`nav-link nav-btn ${location.pathname === '/innovations' ? 'active' : ''}`}
+                className={`nav-link-normal ${location.pathname === '/innovations' ? 'active' : ''}`}
               >
                 Innovations
               </Link>
@@ -67,7 +67,7 @@ function Header() {
             <li className="nav-item">
               <Link
                 to="/careers"
-                className={`nav-link nav-btn ${location.pathname === '/careers' ? 'active' : ''}`}
+                className={`nav-link-normal ${location.pathname === '/careers' ? 'active' : ''}`}
               >
                 Career
               </Link>
@@ -75,7 +75,7 @@ function Header() {
             <li className="nav-item">
               <Link
                 to="/about"
-                className={`nav-link nav-btn ${location.pathname === '/about' ? 'active' : ''}`}
+                className={`nav-link-normal ${location.pathname === '/about' ? 'active' : ''}`}
               >
                 About Us
               </Link>

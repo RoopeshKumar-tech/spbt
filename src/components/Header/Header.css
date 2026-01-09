@@ -155,6 +155,40 @@
   border-color: rgba(187, 139, 35, 0.5);
 }
 
+.nav-link-normal {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  color: #BB8B23;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  display: inline;
+  text-decoration: none;
+}
+
+.nav-link-normal:hover,
+.nav-link-normal.active {
+  background: transparent;
+  color: #9c7422;
+  border-color: transparent;
+}
+
+.header.scrolled .nav-link-normal {
+  color: #FFFFFF;
+  border-color: transparent;
+  background: transparent;
+}
+
+.header.scrolled .nav-link-normal:hover,
+.header.scrolled .nav-link-normal.active {
+  background: transparent;
+  color: #BB8B23;
+  border-color: transparent;
+}
+
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
